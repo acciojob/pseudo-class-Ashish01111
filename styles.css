@@ -1,17 +1,19 @@
 /*  your css code here. If applicable */
 #container {
   margin: 20px;
-  position: relative;
+  position: relative; /* Ensures before/after content aligns properly */
 }
 
 #container::before {
-  content: "Before Content: ";
+  content: "Before";
+  display: block;
   color: #f00;
   font-size: 20px;
 }
 
 #container::after {
-  content: " After Content";
+  content: "After";
+  display: block;
   color: #f00;
   font-size: 20px;
 }
